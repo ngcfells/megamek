@@ -32,7 +32,7 @@
  * affiliated with Microsoft.
  */
 
-package megamek.common.weapons.unofficial.innerSphere.srm;
+package megamek.common.weapons.srms.innerSphere;
 
 import java.io.Serial;
 
@@ -59,6 +59,7 @@ public class ISSRM8 extends SRMWeapon {
         this.addLookupName("IS SRM-8");
         this.addLookupName("ISSRM8");
         this.addLookupName("IS SRM 8");
+        this.addLookupName("IS SRM8");
         this.heat = 5;
         this.rackSize = 8;
         this.shortRange = 3;

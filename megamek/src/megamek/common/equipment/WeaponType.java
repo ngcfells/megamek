@@ -478,6 +478,7 @@ import megamek.common.weapons.srms.clan.torpedo.oneShot.CLSRT6OS;
 import megamek.common.weapons.srms.innerSphere.ISSRM2;
 import megamek.common.weapons.srms.innerSphere.ISSRM4;
 import megamek.common.weapons.srms.innerSphere.ISSRM6;
+import megamek.common.weapons.srms.innerSphere.ISSRM8;
 import megamek.common.weapons.srms.innerSphere.oneShot.ISSRM2IOS;
 import megamek.common.weapons.srms.innerSphere.oneShot.ISSRM2OS;
 import megamek.common.weapons.srms.innerSphere.oneShot.ISSRM4IOS;
@@ -529,7 +530,6 @@ import megamek.common.weapons.unofficial.innerSphere.mrm.oneShot.ISMRM2OS;
 import megamek.common.weapons.unofficial.innerSphere.mrm.oneShot.ISMRM3OS;
 import megamek.common.weapons.unofficial.innerSphere.mrm.oneShot.ISMRM4OS;
 import megamek.common.weapons.unofficial.innerSphere.mrm.oneShot.ISMRM5OS;
-import megamek.common.weapons.unofficial.innerSphere.srm.ISSRM8;
 import megamek.common.weapons.unofficial.innerSphere.thb.ISTHBLB20XAC;
 import megamek.common.weapons.unofficial.innerSphere.thb.ISTHBLB2XAC;
 import megamek.common.weapons.unofficial.innerSphere.thb.ISTHBLB5XAC;
@@ -1662,6 +1662,7 @@ public class WeaponType extends EquipmentType {
         EquipmentType.addType(new ISSRM2());
         EquipmentType.addType(new ISSRM4());
         EquipmentType.addType(new ISSRM6());
+        EquipmentType.addType(new ISSRM8());
         EquipmentType.addType(new ISSRM2OS());
         EquipmentType.addType(new ISSRM4OS());
         EquipmentType.addType(new ISSRM6OS());
@@ -1699,7 +1700,7 @@ public class WeaponType extends EquipmentType {
         EquipmentType.addType(new ISSRM6Primitive());
 
         // Unofficial SRMs
-        EquipmentType.addType(new ISSRM8());
+        
 
         // SRTs
         EquipmentType.addType(new ISSRT2());
