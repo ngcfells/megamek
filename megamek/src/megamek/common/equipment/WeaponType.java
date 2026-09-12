@@ -529,6 +529,7 @@ import megamek.common.weapons.unofficial.innerSphere.mrm.oneShot.ISMRM2OS;
 import megamek.common.weapons.unofficial.innerSphere.mrm.oneShot.ISMRM3OS;
 import megamek.common.weapons.unofficial.innerSphere.mrm.oneShot.ISMRM4OS;
 import megamek.common.weapons.unofficial.innerSphere.mrm.oneShot.ISMRM5OS;
+import megamek.common.weapons.unofficial.innerSphere.srm.ISSRM8;
 import megamek.common.weapons.unofficial.innerSphere.thb.ISTHBLB20XAC;
 import megamek.common.weapons.unofficial.innerSphere.thb.ISTHBLB2XAC;
 import megamek.common.weapons.unofficial.innerSphere.thb.ISTHBLB5XAC;
@@ -1696,6 +1697,9 @@ public class WeaponType extends EquipmentType {
         EquipmentType.addType(new ISSRM2Primitive());
         EquipmentType.addType(new ISSRM4Primitive());
         EquipmentType.addType(new ISSRM6Primitive());
+
+        // Unofficial SRMs
+        EquipmentType.addType(new ISSRM8());
 
         // SRTs
         EquipmentType.addType(new ISSRT2());
