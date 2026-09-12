@@ -32,7 +32,7 @@
  * affiliated with Microsoft.
  */
 
-package megamek.common.weapons.srms.innerSphere;
+package megamek.common.weapons.unofficial.innerSphere.srm;
 
 import java.io.Serial;
 
@@ -67,9 +67,9 @@ public class ISSRM8 extends SRMWeapon {
         this.extremeRange = 12;
         this.tonnage = 4.0;
         this.criticalSlots = 2;
-        this.bv = 79;
+        this.bv = 78;
         this.cost = 100000;
-        this.shortAV = 11;
+        this.shortAV = 10;
         this.maxRange = RANGE_SHORT;
         rulesRefs = rulesRefs(
               rulesRef(SourceBookCode.TM, 229),

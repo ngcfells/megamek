@@ -2589,6 +2589,10 @@ public class AmmoType extends EquipmentType {
         srmAmmos.add(base);
         EquipmentType.addType(base);
 
+        base = AmmoType.createISSRM8Ammo();
+        srmAmmos.add(base);
+        EquipmentType.addType(base);
+
         base = AmmoType.createISSRM2pAmmo();
         srmAmmos.add(base);
         EquipmentType.addType(base);
@@ -9828,6 +9832,41 @@ public class AmmoType extends EquipmentType {
         ammo.flags = ammo.flags.andNot(F_BATTLEARMOR);
         ammo.shots = 15;
         ammo.bv = 7;
+        ammo.cost = 27000;
+        ammo.rulesRefs = rulesRefs(
+              rulesRef(SourceBookCode.TM, 229),
+              rulesRef(SourceBookCode.BMM, 103),
+              rulesRef(SourceBookCode.CORE, 186),
+              rulesRef(SourceBookCode.TW, 303),
+              rulesRef(SourceBookCode.TW, 304)
+        );
+        ammo.techAdvancement.setTechBase(TechBase.ALL)
+              .setStaticTechLevel(SimpleTechLevel.INTRO)
+              .setTechRating(TechRating.C)
+              .setAvailability(AvailabilityValue.C, AvailabilityValue.C, AvailabilityValue.C, AvailabilityValue.C)
+              .setISAdvancement(2365, 2370, 2400, DATE_NONE, DATE_NONE)
+              .setISApproximate(false, false, false, false, false)
+              .setClanAdvancement(2365, 2370, 2400, 2836, DATE_NONE)
+              .setClanApproximate(false, false, false, false, false)
+              .setPrototypeFactions(Faction.TH)
+              .setProductionFactions(Faction.TH);
+        return ammo;
+    }
+
+    private static AmmoType createISSRM8Ammo() {
+        AmmoType ammo = new AmmoType();
+
+        ammo.name = "SRM 8 Ammo";
+        ammo.shortName = "SRM 8";
+        ammo.setInternalName("IS Ammo SRM-8");
+        ammo.addLookupName("ISSRM8 Ammo");
+        ammo.addLookupName("IS SRM 8 Ammo");
+        ammo.damagePerShot = 2;
+        ammo.rackSize = 8;
+        ammo.ammoType = AmmoTypeEnum.SRM;
+        ammo.flags = ammo.flags.andNot(F_BATTLEARMOR);
+        ammo.shots = 12;
+        ammo.bv = 10;
         ammo.cost = 27000;
         ammo.rulesRefs = rulesRefs(
               rulesRef(SourceBookCode.TM, 229),
