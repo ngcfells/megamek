@@ -49,7 +49,7 @@ import megamek.common.weapons.infantry.InfantryWeapon;
 public class InfantryPulseLaserRifleDWSL5C extends InfantryWeapon {
 
     @Serial
-    private static final long serialVersionUID = 1L; // Update for each unique class
+    private static final long serialVersionUID = 2673703823451306107L; // Update for each unique class
 
     public InfantryPulseLaserRifleDWSL5C() {
         super();

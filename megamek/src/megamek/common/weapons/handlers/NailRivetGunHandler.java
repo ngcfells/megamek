@@ -50,7 +50,7 @@ import megamek.server.totalWarfare.TWGameManager;
  */
 public class NailRivetGunHandler extends AmmoWeaponHandler {
     @Serial
-    private static final long serialVersionUID = 5635871269404561702L;
+    private static final long serialVersionUID = 5768451538290620976L;
 
     /**
      *

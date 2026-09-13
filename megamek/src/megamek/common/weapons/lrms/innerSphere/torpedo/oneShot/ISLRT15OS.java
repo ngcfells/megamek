@@ -48,7 +48,7 @@ import megamek.common.weapons.lrms.LRTWeapon;
  */
 public class ISLRT15OS extends LRTWeapon {
     @Serial
-    private static final long serialVersionUID = 106526906717711956L;
+    private static final long serialVersionUID = 3782379042534257554L;
 
     public ISLRT15OS() {
         super();

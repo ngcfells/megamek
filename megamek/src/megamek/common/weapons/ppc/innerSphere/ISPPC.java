@@ -50,7 +50,7 @@ import megamek.common.weapons.ppc.PPCWeapon;
  */
 public class ISPPC extends PPCWeapon {
     @Serial
-    private static final long serialVersionUID = 5775665622863346537L;
+    private static final long serialVersionUID = -212901556751823171L;
 
     public ISPPC() {
         super();

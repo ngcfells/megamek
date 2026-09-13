@@ -45,7 +45,7 @@ import megamek.common.weapons.bayWeapons.BayWeapon;
  */
 public class SubCapLaserBayWeapon extends BayWeapon {
     @Serial
-    private static final long serialVersionUID = 8756042527483383101L;
+    private static final long serialVersionUID = 4137821911510253635L;
 
     public SubCapLaserBayWeapon() {
         super();

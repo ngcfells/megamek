@@ -56,7 +56,7 @@ public class InfantrySupportRocketLauncherLAWWeapon extends InfantryWeapon {
      *
      */
     @Serial
-    private static final long serialVersionUID = -3164871600230559641L;
+    private static final long serialVersionUID = 2660599130555756143L;
 
     public InfantrySupportRocketLauncherLAWWeapon() {
         super();

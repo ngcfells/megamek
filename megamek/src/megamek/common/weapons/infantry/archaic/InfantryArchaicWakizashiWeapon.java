@@ -56,7 +56,7 @@ public class InfantryArchaicWakizashiWeapon extends InfantryWeapon {
      *
      */
     @Serial
-    private static final long serialVersionUID = -3164871600230559641L;
+    private static final long serialVersionUID = 6968888660525272012L;
 
     public InfantryArchaicWakizashiWeapon() {
         super();

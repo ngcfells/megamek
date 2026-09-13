@@ -48,7 +48,7 @@ import megamek.common.enums.TechRating;
  */
 public class ISTAG extends TAGWeapon {
     @Serial
-    private static final long serialVersionUID = -2474477168563228542L;
+    private static final long serialVersionUID = -7595724729187714742L;
 
     public ISTAG() {
         super();

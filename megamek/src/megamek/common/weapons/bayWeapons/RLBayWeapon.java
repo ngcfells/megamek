@@ -54,7 +54,7 @@ import megamek.server.totalWarfare.TWGameManager;
  */
 public class RLBayWeapon extends AmmoBayWeapon {
     @Serial
-    private static final long serialVersionUID = 8756042527483383101L;
+    private static final long serialVersionUID = 2878305972442834974L;
 
     public RLBayWeapon() {
         super();

@@ -49,7 +49,7 @@ import megamek.common.enums.TechRating;
  */
 public class SubCapLaserWeapon2 extends SubCapLaserWeapon {
     @Serial
-    private static final long serialVersionUID = 8756042527483383101L;
+    private static final long serialVersionUID = -4451506363070983882L;
 
     public SubCapLaserWeapon2() {
         super();

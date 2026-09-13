@@ -51,7 +51,7 @@ import megamek.common.weapons.srms.SRTWeapon;
  */
 public class ISSRT8 extends SRTWeapon {
     @Serial
-    private static final long serialVersionUID = -551008288820260001L;
+    private static final long serialVersionUID = 1626004879079019713L;
 
     public ISSRT8() {
         super();

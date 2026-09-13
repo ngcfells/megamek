@@ -52,7 +52,7 @@ import megamek.common.weapons.missiles.rocketLauncher.RLWeapon;
  */
 public class ISRL3 extends RLWeapon {
     @Serial
-    private static final long serialVersionUID = -5963869448761538363L;
+    private static final long serialVersionUID = 3229941468624993954L;
 
     public ISRL3() {
         super();

@@ -52,7 +52,7 @@ public class MantaRayHandler extends AmmoWeaponHandler {
      *
      */
     @Serial
-    private static final long serialVersionUID = -2536312899803153911L;
+    private static final long serialVersionUID = -2351073595268236696L;
 
     /**
      *

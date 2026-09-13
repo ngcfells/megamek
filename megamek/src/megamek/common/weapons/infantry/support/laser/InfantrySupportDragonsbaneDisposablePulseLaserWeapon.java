@@ -57,7 +57,7 @@ public class InfantrySupportDragonsbaneDisposablePulseLaserWeapon extends Infant
      *
      */
     @Serial
-    private static final long serialVersionUID = -3164871600230559641L;
+    private static final long serialVersionUID = 9082353362015024265L;
 
     public InfantrySupportDragonsbaneDisposablePulseLaserWeapon() {
         super();

@@ -49,7 +49,7 @@ import megamek.common.weapons.infantry.InfantryWeapon;
 public class InfantryLaserRifleDarkLightCLLight extends InfantryWeapon {
 
     @Serial
-    private static final long serialVersionUID = 1L; // Update for each unique class
+    private static final long serialVersionUID = 7633840016964594941L; // Update for each unique class
 
     public InfantryLaserRifleDarkLightCLLight() {
         super();

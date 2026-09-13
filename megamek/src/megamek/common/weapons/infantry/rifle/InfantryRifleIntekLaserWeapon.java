@@ -57,7 +57,7 @@ public class InfantryRifleIntekLaserWeapon extends InfantryWeapon {
      *
      */
     @Serial
-    private static final long serialVersionUID = -3164871600230559641L;
+    private static final long serialVersionUID = -6403173285691560211L;
 
     public InfantryRifleIntekLaserWeapon() {
         super();

@@ -44,7 +44,7 @@ import megamek.common.equipment.EquipmentTypeLookup;
  */
 public class LBXBayWeapon extends AmmoBayWeapon {
     @Serial
-    private static final long serialVersionUID = 8756042527483383101L;
+    private static final long serialVersionUID = -3689958380349769423L;
 
     public LBXBayWeapon() {
         super();

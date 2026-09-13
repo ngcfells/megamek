@@ -56,7 +56,7 @@ import megamek.server.totalWarfare.TWGameManager;
  */
 public abstract class FlamerWeapon extends EnergyWeapon {
     @Serial
-    private static final long serialVersionUID = -8198014543155920036L;
+    private static final long serialVersionUID = -2850557298378599490L;
 
     public FlamerWeapon() {
         super();

@@ -54,7 +54,7 @@ import megamek.server.totalWarfare.TWGameManager;
  */
 public class GaussBayWeapon extends AmmoBayWeapon {
     @Serial
-    private static final long serialVersionUID = 8756042527483383101L;
+    private static final long serialVersionUID = 7383047511953360840L;
 
     public GaussBayWeapon() {
         super();

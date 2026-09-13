@@ -50,7 +50,7 @@ import megamek.common.weapons.infantry.InfantryWeapon;
  */
 public class InfantrySupportGungnirHeavyGaussWeapon extends InfantryWeapon {
     @Serial
-    private static final long serialVersionUID = -3164871600230559641L;
+    private static final long serialVersionUID = 8958189268777962014L;
 
     public InfantrySupportGungnirHeavyGaussWeapon() {
         super();

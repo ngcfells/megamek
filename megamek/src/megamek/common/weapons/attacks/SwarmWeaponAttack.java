@@ -59,7 +59,7 @@ import megamek.server.totalWarfare.TWGameManager;
  */
 public class SwarmWeaponAttack extends InfantryAttack {
     @Serial
-    private static final long serialVersionUID = 8593642424068542897L;
+    private static final long serialVersionUID = 4083443551524008213L;
 
     public SwarmWeaponAttack() {
         super();

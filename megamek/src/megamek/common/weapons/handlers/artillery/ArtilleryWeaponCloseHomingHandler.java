@@ -49,7 +49,7 @@ import megamek.server.totalWarfare.TWGameManager;
  */
 public class ArtilleryWeaponCloseHomingHandler extends ArtilleryWeaponDistantHomingHandler {
     @Serial
-    private static final long serialVersionUID = 7543333005465757983L;
+    private static final long serialVersionUID = 7394520451358545669L;
 
     /**
      *

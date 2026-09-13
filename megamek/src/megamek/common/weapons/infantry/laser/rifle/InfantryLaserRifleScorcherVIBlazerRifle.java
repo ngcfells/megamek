@@ -49,7 +49,7 @@ import megamek.common.weapons.infantry.InfantryWeapon;
 public class InfantryLaserRifleScorcherVIBlazerRifle extends InfantryWeapon {
 
     @Serial
-    private static final long serialVersionUID = 1L; // Update for each unique class
+    private static final long serialVersionUID = -2590188582651899526L; // Update for each unique class
 
     public InfantryLaserRifleScorcherVIBlazerRifle() {
         super();

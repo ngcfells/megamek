@@ -49,7 +49,7 @@ import megamek.common.weapons.lasers.PulseLaserWeapon;
  */
 public class ISPulseLaserLarge extends PulseLaserWeapon {
     @Serial
-    private static final long serialVersionUID = 94533476706680275L;
+    private static final long serialVersionUID = 2295889192284863339L;
 
     public ISPulseLaserLarge() {
         super();

@@ -50,7 +50,7 @@ import megamek.common.equipment.AmmoType;
  */
 public class LongTom extends ArtilleryWeapon {
     @Serial
-    private static final long serialVersionUID = 5323886711682442495L;
+    private static final long serialVersionUID = 1882573793381795914L;
 
     public LongTom() {
         super();

@@ -52,7 +52,7 @@ public class WhiteSharkHandler extends AmmoWeaponHandler {
      *
      */
     @Serial
-    private static final long serialVersionUID = -2536312899803153911L;
+    private static final long serialVersionUID = -4743878053724258890L;
 
     /**
      *

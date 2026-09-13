@@ -59,7 +59,7 @@ public class MekMortarFlareHandler extends AmmoWeaponHandler {
     private static final MMLogger logger = MMLogger.create(MekMortarFlareHandler.class);
 
     @Serial
-    private static final long serialVersionUID = -2073773899108954657L;
+    private static final long serialVersionUID = 2158216365449981276L;
 
     public MekMortarFlareHandler(ToHitData t, WeaponAttackAction w, Game g, TWGameManager m)
           throws EntityLoadingException {

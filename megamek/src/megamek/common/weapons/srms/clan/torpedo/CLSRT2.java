@@ -52,7 +52,7 @@ public class CLSRT2 extends SRTWeapon {
      *
      */
     @Serial
-    private static final long serialVersionUID = -6695135847410932636L;
+    private static final long serialVersionUID = -968021043277139978L;
 
     /**
      *

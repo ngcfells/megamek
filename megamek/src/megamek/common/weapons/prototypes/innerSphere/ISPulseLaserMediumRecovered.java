@@ -66,7 +66,7 @@ public class ISPulseLaserMediumRecovered extends PulseLaserWeapon {
      *
      */
     @Serial
-    private static final long serialVersionUID = -8402915088560062495L;
+    private static final long serialVersionUID = 7859832152389523854L;
 
     /**
      *

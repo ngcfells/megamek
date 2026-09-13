@@ -50,7 +50,7 @@ import megamek.common.weapons.infantry.InfantryWeapon;
  */
 public class InfantryPistolLemisonCombatRevolver extends InfantryWeapon {
     @Serial
-    private static final long serialVersionUID = -3164871600230559641L;
+    private static final long serialVersionUID = 803626780492519404L;
 
     public InfantryPistolLemisonCombatRevolver() {
         super();

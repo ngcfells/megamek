@@ -52,7 +52,7 @@ import megamek.common.weapons.infantry.InfantryWeapon;
 public class InfantryShotgunDaystarIIM extends InfantryWeapon {
 
     @Serial
-    private static final long serialVersionUID = -3164871600230559641L;
+    private static final long serialVersionUID = -3319748256930066725L;
 
     public InfantryShotgunDaystarIIM() {
         super();

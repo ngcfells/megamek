@@ -60,7 +60,7 @@ import megamek.server.totalWarfare.TWGameManager;
  */
 public class ISPulseLaserLargePrototype extends PulseLaserWeapon {
     @Serial
-    private static final long serialVersionUID = 94533476706680275L;
+    private static final long serialVersionUID = 3808375246663391973L;
 
     public ISPulseLaserLargePrototype() {
         super();

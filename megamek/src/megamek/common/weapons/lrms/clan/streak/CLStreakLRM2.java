@@ -43,7 +43,7 @@ import megamek.common.weapons.lrms.StreakLRMWeapon;
  */
 public class CLStreakLRM2 extends StreakLRMWeapon {
     @Serial
-    private static final long serialVersionUID = 5240577239366457930L;
+    private static final long serialVersionUID = 4708746308905491853L;
 
     public CLStreakLRM2() {
         super();

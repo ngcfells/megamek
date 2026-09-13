@@ -60,7 +60,7 @@ import megamek.server.totalWarfare.TWGameManager;
  */
 public class ISRISCHyperLaser extends LaserWeapon {
     @Serial
-    private static final long serialVersionUID = 4467522144065588079L;
+    private static final long serialVersionUID = 3160818114951373852L;
 
     public ISRISCHyperLaser() {
         super();

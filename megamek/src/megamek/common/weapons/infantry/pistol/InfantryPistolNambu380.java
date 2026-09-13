@@ -49,7 +49,7 @@ import megamek.common.weapons.infantry.InfantryWeapon;
  */
 public class InfantryPistolNambu380 extends InfantryWeapon {
     @Serial
-    private static final long serialVersionUID = -3164871600230559641L;
+    private static final long serialVersionUID = 8107489988629753005L;
 
     public InfantryPistolNambu380() {
         super();

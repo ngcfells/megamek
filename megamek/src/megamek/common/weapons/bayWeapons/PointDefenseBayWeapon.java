@@ -44,7 +44,7 @@ import megamek.common.equipment.EquipmentTypeLookup;
  */
 public class PointDefenseBayWeapon extends AmmoBayWeapon {
     @Serial
-    private static final long serialVersionUID = 8756042527483383101L;
+    private static final long serialVersionUID = -5742640426080934432L;
 
     public PointDefenseBayWeapon() {
         super();

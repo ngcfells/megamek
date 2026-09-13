@@ -57,7 +57,7 @@ public class InfantrySMGClanGaussWeapon extends InfantryWeapon {
      *
      */
     @Serial
-    private static final long serialVersionUID = -3164871600230559641L;
+    private static final long serialVersionUID = 758038832521208636L;
 
     public InfantrySMGClanGaussWeapon() {
         super();

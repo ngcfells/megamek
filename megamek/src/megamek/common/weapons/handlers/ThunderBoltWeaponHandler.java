@@ -60,7 +60,7 @@ import megamek.server.totalWarfare.TWGameManager;
  */
 public class ThunderBoltWeaponHandler extends MissileWeaponHandler {
     @Serial
-    private static final long serialVersionUID = 6329291710822071023L;
+    private static final long serialVersionUID = -6277323646284226278L;
 
     /**
      *

@@ -61,7 +61,7 @@ import megamek.server.totalWarfare.TWGameManager;
  */
 public class ScreenLauncherWeapon extends AmmoWeapon {
     @Serial
-    private static final long serialVersionUID = 8756042527483383101L;
+    private static final long serialVersionUID = 3213041444882441456L;
 
     public ScreenLauncherWeapon() {
         this.name = "Screen Launcher";

@@ -57,7 +57,7 @@ public class InfantrySupportClanBearhunterAutocannonWeapon extends InfantryWeapo
      *
      */
     @Serial
-    private static final long serialVersionUID = -3164871600230559641L;
+    private static final long serialVersionUID = 5177545818347146962L;
 
     public InfantrySupportClanBearhunterAutocannonWeapon() {
         super();

@@ -49,7 +49,7 @@ import megamek.common.weapons.infantry.InfantryWeapon;
 public class InfantryPulseLaserRifleTirbuni extends InfantryWeapon {
 
     @Serial
-    private static final long serialVersionUID = 1L; // Update for each unique class
+    private static final long serialVersionUID = -8756426509782197208L; // Update for each unique class
 
     public InfantryPulseLaserRifleTirbuni() {
         super();

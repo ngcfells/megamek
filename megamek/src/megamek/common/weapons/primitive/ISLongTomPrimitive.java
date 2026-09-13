@@ -53,7 +53,7 @@ import megamek.common.weapons.artillery.ArtilleryWeapon;
  */
 public class ISLongTomPrimitive extends ArtilleryWeapon {
     @Serial
-    private static final long serialVersionUID = 5323886711682442495L;
+    private static final long serialVersionUID = -1603530066914347354L;
 
     public ISLongTomPrimitive() {
         super();

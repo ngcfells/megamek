@@ -65,7 +65,7 @@ import megamek.server.totalWarfare.TWGameManager;
  */
 public class VGLWeaponHandler extends AmmoWeaponHandler {
     @Serial
-    private static final long serialVersionUID = -4934490646657484486L;
+    private static final long serialVersionUID = 8326672532777549218L;
 
     public VGLWeaponHandler(ToHitData t, WeaponAttackAction w, Game g, TWGameManager m) throws EntityLoadingException {
         super(t, w, g, m);

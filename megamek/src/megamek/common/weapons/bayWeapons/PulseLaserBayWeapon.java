@@ -44,7 +44,7 @@ import megamek.common.equipment.EquipmentTypeLookup;
  */
 public class PulseLaserBayWeapon extends BayWeapon {
     @Serial
-    private static final long serialVersionUID = 8756042527483383101L;
+    private static final long serialVersionUID = 593078746014261629L;
 
     public PulseLaserBayWeapon() {
         super();

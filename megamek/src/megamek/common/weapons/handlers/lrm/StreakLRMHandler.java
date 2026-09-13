@@ -55,7 +55,7 @@ import megamek.server.totalWarfare.TWGameManager;
 
 public class StreakLRMHandler extends StreakHandler {
     @Serial
-    private static final long serialVersionUID = -3848472655779311898L;
+    private static final long serialVersionUID = -4870874107707565249L;
 
     /**
      *

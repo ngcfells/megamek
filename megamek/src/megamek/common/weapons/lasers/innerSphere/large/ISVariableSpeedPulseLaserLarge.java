@@ -52,7 +52,7 @@ import megamek.common.weapons.lasers.VariableSpeedPulseLaserWeapon;
  */
 public class ISVariableSpeedPulseLaserLarge extends VariableSpeedPulseLaserWeapon {
     @Serial
-    private static final long serialVersionUID = 2676144961105838316L;
+    private static final long serialVersionUID = 7238251329330387362L;
 
     public ISVariableSpeedPulseLaserLarge() {
         super();

@@ -54,7 +54,7 @@ public class InfantrySMGDSKLargoSGA extends InfantryWeapon {
      *
      */
     @Serial
-    private static final long serialVersionUID = -3164871600230559641L;
+    private static final long serialVersionUID = 6851443987025479888L;
 
     public InfantrySMGDSKLargoSGA() {
         super();

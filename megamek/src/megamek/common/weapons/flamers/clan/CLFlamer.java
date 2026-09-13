@@ -50,7 +50,7 @@ import megamek.common.weapons.flamers.FlamerWeapon;
  */
 public class CLFlamer extends FlamerWeapon {
     @Serial
-    private static final long serialVersionUID = 8782512971175525221L;
+    private static final long serialVersionUID = 3691406504959428589L;
 
     public CLFlamer() {
         super();

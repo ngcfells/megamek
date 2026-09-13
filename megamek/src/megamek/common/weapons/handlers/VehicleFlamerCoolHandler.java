@@ -57,7 +57,7 @@ import megamek.server.totalWarfare.TWGameManager;
  */
 public class VehicleFlamerCoolHandler extends AmmoWeaponHandler {
     @Serial
-    private static final long serialVersionUID = 4856089237895318515L;
+    private static final long serialVersionUID = -1435640367306593296L;
 
     /**
      * @param toHitData          The {@link ToHitData} to use.

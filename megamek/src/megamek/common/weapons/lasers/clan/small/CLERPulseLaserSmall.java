@@ -51,7 +51,7 @@ import megamek.common.weapons.lasers.PulseLaserWeapon;
  */
 public class CLERPulseLaserSmall extends PulseLaserWeapon {
     @Serial
-    private static final long serialVersionUID = -273231806790327505L;
+    private static final long serialVersionUID = 6916972322041398277L;
 
     public CLERPulseLaserSmall() {
         super();

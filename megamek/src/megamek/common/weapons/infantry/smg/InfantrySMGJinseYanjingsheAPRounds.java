@@ -51,7 +51,7 @@ import megamek.common.weapons.infantry.InfantryWeapon;
 public class InfantrySMGJinseYanjingsheAPRounds extends InfantryWeapon {
 
     @Serial
-    private static final long serialVersionUID = -3164871600230559641L;
+    private static final long serialVersionUID = -3510706156322351639L;
 
     public InfantrySMGJinseYanjingsheAPRounds() {
         super();

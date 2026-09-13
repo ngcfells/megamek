@@ -57,7 +57,7 @@ public class InfantrySupportPortablePlasmaWeapon extends InfantryWeapon {
      *
      */
     @Serial
-    private static final long serialVersionUID = -5741978934100309295L;
+    private static final long serialVersionUID = -7062227724181442010L;
 
     public InfantrySupportPortablePlasmaWeapon() {
         super();

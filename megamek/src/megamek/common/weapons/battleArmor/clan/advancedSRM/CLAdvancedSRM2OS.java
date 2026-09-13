@@ -50,7 +50,7 @@ import megamek.common.weapons.battleArmor.AdvancedSRMWeapon;
  */
 public class CLAdvancedSRM2OS extends AdvancedSRMWeapon {
     @Serial
-    private static final long serialVersionUID = 5607708375304559535L;
+    private static final long serialVersionUID = 7204671630364274453L;
 
     public CLAdvancedSRM2OS() {
         super();

@@ -66,7 +66,7 @@ import megamek.server.totalWarfare.TWGameManager;
  */
 public class ISSilverBulletGauss extends GaussWeapon {
     @Serial
-    private static final long serialVersionUID = -6873790245999096707L;
+    private static final long serialVersionUID = -4609844646215579592L;
 
     public ISSilverBulletGauss() {
         super();

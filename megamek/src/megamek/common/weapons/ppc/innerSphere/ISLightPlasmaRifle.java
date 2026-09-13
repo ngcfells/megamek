@@ -59,7 +59,7 @@ import megamek.server.totalWarfare.TWGameManager;
  */
 public class ISLightPlasmaRifle extends AmmoWeapon {
     @Serial
-    private static final long serialVersionUID = -7919371014161089388L;
+    private static final long serialVersionUID = -7719974915525185743L;
 
     public ISLightPlasmaRifle() {
         name = "Light Plasma Rifle";

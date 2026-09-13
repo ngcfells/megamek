@@ -59,7 +59,7 @@ import megamek.server.totalWarfare.TWGameManager;
  */
 public abstract class ArtilleryWeapon extends AmmoWeapon {
     @Serial
-    private static final long serialVersionUID = -732023379991213890L;
+    private static final long serialVersionUID = -5974495707220769788L;
 
     public ArtilleryWeapon() {
         super();

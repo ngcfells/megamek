@@ -57,7 +57,7 @@ public class InfantryPistolSternsnachtPythonAutoPistolWeapon extends InfantryWea
      *
      */
     @Serial
-    private static final long serialVersionUID = -3164871600230559641L;
+    private static final long serialVersionUID = -153326910990734296L;
 
     public InfantryPistolSternsnachtPythonAutoPistolWeapon() {
         super();

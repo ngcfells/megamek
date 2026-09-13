@@ -57,7 +57,7 @@ public class InfantryArchaicNeuralWhipWeapon extends InfantryWeapon {
      *
      */
     @Serial
-    private static final long serialVersionUID = -3164871600230559641L;
+    private static final long serialVersionUID = -5142167513955248822L;
 
     public InfantryArchaicNeuralWhipWeapon() {
         super();

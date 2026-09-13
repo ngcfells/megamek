@@ -57,7 +57,7 @@ public class InfantrySupportClanSemiPortableHeavyLaserWeapon extends InfantryWea
      *
      */
     @Serial
-    private static final long serialVersionUID = -3164871600230559641L;
+    private static final long serialVersionUID = 4921972624624210595L;
 
     public InfantrySupportClanSemiPortableHeavyLaserWeapon() {
         super();

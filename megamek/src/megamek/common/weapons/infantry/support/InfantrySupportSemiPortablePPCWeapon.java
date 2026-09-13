@@ -57,7 +57,7 @@ public class InfantrySupportSemiPortablePPCWeapon extends InfantryWeapon {
      *
      */
     @Serial
-    private static final long serialVersionUID = -3164871600230559641L;
+    private static final long serialVersionUID = 378121454494478975L;
 
     public InfantrySupportSemiPortablePPCWeapon() {
         super();

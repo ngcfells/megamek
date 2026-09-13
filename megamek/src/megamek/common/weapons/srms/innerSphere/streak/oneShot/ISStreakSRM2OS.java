@@ -48,7 +48,7 @@ import megamek.common.weapons.srms.StreakSRMWeapon;
  */
 public class ISStreakSRM2OS extends StreakSRMWeapon {
     @Serial
-    private static final long serialVersionUID = 4837075335425856208L;
+    private static final long serialVersionUID = -5688687247586189055L;
 
     public ISStreakSRM2OS() {
         super();

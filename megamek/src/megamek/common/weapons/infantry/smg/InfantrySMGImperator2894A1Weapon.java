@@ -57,7 +57,7 @@ public class InfantrySMGImperator2894A1Weapon extends InfantryWeapon {
      *
      */
     @Serial
-    private static final long serialVersionUID = -3164871600230559641L;
+    private static final long serialVersionUID = 6898164281737031849L;
 
     public InfantrySMGImperator2894A1Weapon() {
         super();

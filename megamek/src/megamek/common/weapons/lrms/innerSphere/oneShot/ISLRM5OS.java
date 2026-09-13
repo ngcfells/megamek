@@ -48,7 +48,7 @@ import megamek.common.weapons.lrms.LRMWeapon;
  */
 public class ISLRM5OS extends LRMWeapon {
     @Serial
-    private static final long serialVersionUID = 3915337270241715850L;
+    private static final long serialVersionUID = -9052363029072349638L;
 
     public ISLRM5OS() {
         super();

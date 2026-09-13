@@ -44,7 +44,7 @@ import megamek.common.equipment.EquipmentTypeLookup;
  */
 public class PPCBayWeapon extends BayWeapon {
     @Serial
-    private static final long serialVersionUID = 8756042527483383101L;
+    private static final long serialVersionUID = -5327488835221354864L;
 
     public PPCBayWeapon() {
         super();

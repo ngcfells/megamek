@@ -55,7 +55,7 @@ public class InfantrySniperRifleFNFJ12DarkCaste extends InfantryWeapon {
      *
      */
     @Serial
-    private static final long serialVersionUID = -3164871600230559641L;
+    private static final long serialVersionUID = -5542925258146221933L;
 
     public InfantrySniperRifleFNFJ12DarkCaste() {
         super();

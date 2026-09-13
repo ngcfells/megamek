@@ -72,7 +72,7 @@ public class CapitalMissileBayHandler extends AmmoBayWeaponHandler {
     private static final MMLogger LOGGER = MMLogger.create(CapitalMissileBayHandler.class);
 
     @Serial
-    private static final long serialVersionUID = -1618484541772117621L;
+    private static final long serialVersionUID = -6720464254613106104L;
     boolean advancedPD;
 
     /**

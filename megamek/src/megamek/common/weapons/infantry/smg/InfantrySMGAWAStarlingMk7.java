@@ -51,7 +51,7 @@ import megamek.common.weapons.infantry.InfantryWeapon;
 public class InfantrySMGAWAStarlingMk7 extends InfantryWeapon {
 
     @Serial
-    private static final long serialVersionUID = -3164871600230559641L;
+    private static final long serialVersionUID = 107197218093050341L;
 
     public InfantrySMGAWAStarlingMk7() {
         super();

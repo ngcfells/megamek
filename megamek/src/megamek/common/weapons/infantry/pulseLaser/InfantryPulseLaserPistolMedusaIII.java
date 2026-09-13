@@ -48,7 +48,7 @@ import megamek.common.weapons.infantry.InfantryWeapon;
 public class InfantryPulseLaserPistolMedusaIII extends InfantryWeapon {
 
     @Serial
-    private static final long serialVersionUID = 1L; // Update for each unique class
+    private static final long serialVersionUID = -2931339728330547737L; // Update for each unique class
 
     public InfantryPulseLaserPistolMedusaIII() {
         super();

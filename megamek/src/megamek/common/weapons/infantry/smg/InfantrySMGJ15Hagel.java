@@ -51,7 +51,7 @@ import megamek.common.weapons.infantry.InfantryWeapon;
 public class InfantrySMGJ15Hagel extends InfantryWeapon {
 
     @Serial
-    private static final long serialVersionUID = -3164871600230559641L;
+    private static final long serialVersionUID = 2035209848868803027L;
 
     public InfantrySMGJ15Hagel() {
         super();

@@ -56,7 +56,7 @@ public class InfantryArchaicHeavyCrossbowWeapon extends InfantryWeapon {
      *
      */
     @Serial
-    private static final long serialVersionUID = -3164871600230559641L;
+    private static final long serialVersionUID = -8536605004403049540L;
 
     public InfantryArchaicHeavyCrossbowWeapon() {
         super();

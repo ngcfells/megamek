@@ -69,7 +69,7 @@ public class ArtilleryWeaponDistantHomingHandler extends ArtilleryWeaponDistantF
     private static final MMLogger LOGGER = MMLogger.create(ArtilleryWeaponDistantHomingHandler.class);
 
     @Serial
-    private static final long serialVersionUID = -7243477723032010917L;
+    private static final long serialVersionUID = 4704682839567271389L;
     boolean advancedAMS;
     boolean advancedPD;
 

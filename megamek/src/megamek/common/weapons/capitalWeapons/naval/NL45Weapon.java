@@ -48,7 +48,7 @@ import megamek.common.enums.TechRating;
  */
 public class NL45Weapon extends NLWeapon {
     @Serial
-    private static final long serialVersionUID = 8756042527483383101L;
+    private static final long serialVersionUID = 3757831930017466981L;
 
     public NL45Weapon() {
         super();

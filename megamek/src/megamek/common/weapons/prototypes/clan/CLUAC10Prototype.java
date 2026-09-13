@@ -49,7 +49,7 @@ import megamek.common.enums.TechRating;
  */
 public class CLUAC10Prototype extends CLPrototypeUACWeapon {
     @Serial
-    private static final long serialVersionUID = 6937673199956551674L;
+    private static final long serialVersionUID = -269731083458026531L;
 
     public CLUAC10Prototype() {
         super();

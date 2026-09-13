@@ -50,7 +50,7 @@ import megamek.common.weapons.CLIATMWeapon;
  */
 public class CLIATM12 extends CLIATMWeapon {
     @Serial
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 83939331109259001L;
 
     public CLIATM12() {
         super();

@@ -48,7 +48,7 @@ import megamek.common.weapons.srms.SRMWeapon;
  */
 public class ISSRM3 extends SRMWeapon {
     @Serial
-    private static final long serialVersionUID = 8732407650030864483L;
+    private static final long serialVersionUID = 9130760855845529938L;
 
     public ISSRM3() {
         super();

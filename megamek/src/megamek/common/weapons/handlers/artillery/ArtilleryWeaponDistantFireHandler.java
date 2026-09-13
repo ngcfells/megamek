@@ -85,7 +85,7 @@ public class ArtilleryWeaponDistantFireHandler extends AmmoWeaponHandler {
     private static final MMLogger logger = MMLogger.create(ArtilleryWeaponDistantFireHandler.class);
 
     @Serial
-    private static final long serialVersionUID = -1277649123562229298L;
+    private static final long serialVersionUID = 2651008035005297661L;
     boolean handledAmmoAndReport = false;
     private int shootingBA = -1;
 

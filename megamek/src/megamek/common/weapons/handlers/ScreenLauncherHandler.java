@@ -59,7 +59,7 @@ public class ScreenLauncherHandler extends AmmoWeaponHandler {
      *
      */
     @Serial
-    private static final long serialVersionUID = -2536312899803153911L;
+    private static final long serialVersionUID = 93109310586854821L;
 
     /**
      *

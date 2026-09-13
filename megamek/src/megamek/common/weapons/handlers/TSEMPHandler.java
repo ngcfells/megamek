@@ -68,7 +68,7 @@ import megamek.server.totalWarfare.TWGameManager;
  */
 public class TSEMPHandler extends EnergyWeaponHandler {
     @Serial
-    private static final long serialVersionUID = 5545991061428671743L;
+    private static final long serialVersionUID = 305471541261970773L;
 
     /**
      *

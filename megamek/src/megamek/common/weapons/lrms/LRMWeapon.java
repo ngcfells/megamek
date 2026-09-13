@@ -59,7 +59,7 @@ import megamek.server.totalWarfare.TWGameManager;
 public abstract class LRMWeapon extends MissileWeapon {
 
     @Serial
-    private static final long serialVersionUID = 8755275511561446251L;
+    private static final long serialVersionUID = -6022364377620688625L;
 
     public LRMWeapon() {
         super();

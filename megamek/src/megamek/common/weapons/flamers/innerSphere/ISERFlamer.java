@@ -52,7 +52,7 @@ import megamek.common.weapons.flamers.FlamerWeapon;
  */
 public class ISERFlamer extends FlamerWeapon {
     @Serial
-    private static final long serialVersionUID = 1414639280093120062L;
+    private static final long serialVersionUID = 5910139584473133286L;
 
     public ISERFlamer() {
         super();

@@ -49,7 +49,7 @@ import megamek.common.weapons.srms.SRMWeapon;
  */
 public class CLSRM2IOS extends SRMWeapon {
     @Serial
-    private static final long serialVersionUID = 3798165725512473586L;
+    private static final long serialVersionUID = -1571136281429086985L;
 
     public CLSRM2IOS() {
         super();

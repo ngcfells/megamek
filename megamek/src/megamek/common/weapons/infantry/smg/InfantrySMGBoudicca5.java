@@ -54,7 +54,7 @@ public class InfantrySMGBoudicca5 extends InfantryWeapon {
      *
      */
     @Serial
-    private static final long serialVersionUID = -3164871600230559641L;
+    private static final long serialVersionUID = 9055165313264562513L;
 
     public InfantrySMGBoudicca5() {
         super();

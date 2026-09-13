@@ -46,7 +46,7 @@ import megamek.common.weapons.gaussRifles.GaussWeapon;
  */
 public abstract class NGaussWeapon extends GaussWeapon {
     @Serial
-    private static final long serialVersionUID = -2800123131421584210L;
+    private static final long serialVersionUID = 4105778621498803676L;
 
     public NGaussWeapon() {
         super();

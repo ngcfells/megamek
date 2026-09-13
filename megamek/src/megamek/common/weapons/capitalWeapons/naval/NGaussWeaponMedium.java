@@ -49,7 +49,7 @@ import megamek.common.equipment.AmmoType;
  */
 public class NGaussWeaponMedium extends NGaussWeapon {
     @Serial
-    private static final long serialVersionUID = 8756042527483383101L;
+    private static final long serialVersionUID = -4114297660498194142L;
 
     public NGaussWeaponMedium() {
         super();

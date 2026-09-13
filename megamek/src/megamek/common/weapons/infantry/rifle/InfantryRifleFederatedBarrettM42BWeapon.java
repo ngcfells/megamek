@@ -50,7 +50,7 @@ import megamek.common.weapons.infantry.InfantryWeapon;
  */
 public class InfantryRifleFederatedBarrettM42BWeapon extends InfantryWeapon {
     @Serial
-    private static final long serialVersionUID = -3164871600230559641L;
+    private static final long serialVersionUID = 2917885691597719949L;
 
     public InfantryRifleFederatedBarrettM42BWeapon() {
         super();

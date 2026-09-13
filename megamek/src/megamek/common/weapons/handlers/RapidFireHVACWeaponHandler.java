@@ -56,7 +56,7 @@ import megamek.server.totalWarfare.TWGameManager;
 
 public class RapidFireHVACWeaponHandler extends RapidFireACWeaponHandler {
     @Serial
-    private static final long serialVersionUID = 7326881584091651519L;
+    private static final long serialVersionUID = 3240458885706738198L;
 
     public RapidFireHVACWeaponHandler(ToHitData t, WeaponAttackAction w, Game g, TWGameManager m)
           throws EntityLoadingException {

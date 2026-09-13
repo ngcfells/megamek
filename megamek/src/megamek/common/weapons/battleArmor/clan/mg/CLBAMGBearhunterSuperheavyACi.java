@@ -52,7 +52,7 @@ import megamek.common.weapons.Weapon;
  */
 public class CLBAMGBearhunterSuperheavyACi extends Weapon {
     @Serial
-    private static final long serialVersionUID = -1042154309245048380L;
+    private static final long serialVersionUID = -7113825021691284253L;
 
     public CLBAMGBearhunterSuperheavyACi() {
         super();

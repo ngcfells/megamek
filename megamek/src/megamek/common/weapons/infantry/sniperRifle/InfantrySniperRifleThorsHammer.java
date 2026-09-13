@@ -46,7 +46,7 @@ import megamek.common.weapons.infantry.InfantryWeapon;
  * @since March 20, 2022
  */
 public class InfantrySniperRifleThorsHammer extends InfantryWeapon {
-    private static final long serialVersionUID = -3164871600230559641L;
+    private static final long serialVersionUID = 2860886045347778884L;
 
     public InfantrySniperRifleThorsHammer() {
         super();

@@ -59,7 +59,7 @@ public class MekMortarSmokeHandler extends AmmoWeaponHandler {
     private static final MMLogger LOGGER = MMLogger.create(MekMortarSmokeHandler.class);
 
     @Serial
-    private static final long serialVersionUID = -2073773899108954657L;
+    private static final long serialVersionUID = 999409666117744630L;
 
     public MekMortarSmokeHandler(ToHitData t, WeaponAttackAction w, Game g, TWGameManager m)
           throws EntityLoadingException {

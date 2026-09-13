@@ -46,7 +46,7 @@ import megamek.common.weapons.lasers.EnergyWeapon;
  */
 public abstract class SubCapLaserWeapon extends EnergyWeapon {
     @Serial
-    private static final long serialVersionUID = -4293264735637352953L;
+    private static final long serialVersionUID = 2516444430508371495L;
 
     public SubCapLaserWeapon() {
         super();
