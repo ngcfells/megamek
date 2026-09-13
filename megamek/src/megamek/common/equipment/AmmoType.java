@@ -195,7 +195,8 @@ public class AmmoType extends EquipmentType {
         WHITE_SHARK_T(111, "White Shark-T", AmmoCategory.Missile),
         BARRACUDA_T(112, "Barracuda-T", AmmoCategory.Missile),
         INFANTRY(113, "Infantry", AmmoCategory.Special),
-        NLRM_TORPEDO(114, "NLRM Torpedo", AmmoCategory.Missile);
+        NLRM_TORPEDO(114, "NLRM Torpedo", AmmoCategory.Missile),
+        SRM_STREAK_TORPEDO(115, "Streak SRM TORPEDO", AmmoCategory.Missile);
 
         private static final Map<Integer, AmmoTypeEnum> INDEX_LOOKUP = new HashMap<>();
 
@@ -246,7 +247,7 @@ public class AmmoType extends EquipmentType {
         }
 
         public boolean isTorpedo() {
-            return this == LRM_TORPEDO || this == SRM_TORPEDO || this == NLRM_TORPEDO;
+            return this == LRM_TORPEDO || this == SRM_TORPEDO || this == NLRM_TORPEDO || this == SRM_STREAK_TORPEDO;
         }
     }
 
@@ -257,7 +258,7 @@ public class AmmoType extends EquipmentType {
                                                                   AmmoTypeEnum.LRM_STREAK, AmmoTypeEnum.LRM_TORPEDO,
                                                                   AmmoTypeEnum.LRM_TORPEDO_COMBO, AmmoTypeEnum.SRM,
                                                                   AmmoTypeEnum.SRM_ADVANCED, AmmoTypeEnum.SRM_PRIMITIVE,
-                                                                  AmmoTypeEnum.SRM_STREAK, AmmoTypeEnum.SRM_TORPEDO,
+                                                                  AmmoTypeEnum.SRM_STREAK, AmmoTypeEnum.SRM_STREAK_TORPEDO, AmmoTypeEnum.SRM_TORPEDO,
                                                                   AmmoTypeEnum.MRM, AmmoTypeEnum.ROCKET_LAUNCHER,
                                                                   AmmoTypeEnum.EXLRM, AmmoTypeEnum.MML,
                                                                   AmmoTypeEnum.NLRM,
@@ -2593,6 +2594,10 @@ public class AmmoType extends EquipmentType {
         srmAmmos.add(base);
         EquipmentType.addType(base);
 
+        base = AmmoType.createISSRM10Ammo();
+        srmAmmos.add(base);
+        EquipmentType.addType(base);
+
         base = AmmoType.createISSRM2pAmmo();
         srmAmmos.add(base);
         EquipmentType.addType(base);
@@ -2685,6 +2690,8 @@ public class AmmoType extends EquipmentType {
         EquipmentType.addType(AmmoType.createISStreakSRM2Ammo());
         EquipmentType.addType(AmmoType.createISStreakSRM4Ammo());
         EquipmentType.addType(AmmoType.createISStreakSRM6Ammo());
+        EquipmentType.addType(AmmoType.createISStreakSRM8Ammo());
+        EquipmentType.addType(AmmoType.createISStreakSRM10Ammo());
         EquipmentType.addType(AmmoType.createISMRM10Ammo());
         EquipmentType.addType(AmmoType.createISMRM20Ammo());
         EquipmentType.addType(AmmoType.createISMRM30Ammo());
@@ -3303,6 +3310,12 @@ public class AmmoType extends EquipmentType {
         srtAmmos.add(base);
         EquipmentType.addType(base);
         base = AmmoType.createISSRT6Ammo();
+        srtAmmos.add(base);
+        EquipmentType.addType(base);
+        base = AmmoType.createISSRT8Ammo();
+        srtAmmos.add(base);
+        EquipmentType.addType(base);
+        base = AmmoType.createISSRT10Ammo();
         srtAmmos.add(base);
         EquipmentType.addType(base);
 
@@ -9888,6 +9901,41 @@ public class AmmoType extends EquipmentType {
         return ammo;
     }
 
+    private static AmmoType createISSRM10Ammo() {
+        AmmoType ammo = new AmmoType();
+
+        ammo.name = "SRM 10 Ammo";
+        ammo.shortName = "SRM 10";
+        ammo.setInternalName("IS Ammo SRM-10");
+        ammo.addLookupName("ISSRM10 Ammo");
+        ammo.addLookupName("IS SRM 10 Ammo");
+        ammo.damagePerShot = 2;
+        ammo.rackSize = 10;
+        ammo.ammoType = AmmoTypeEnum.SRM;
+        ammo.flags = ammo.flags.andNot(F_BATTLEARMOR);
+        ammo.shots = 10;
+        ammo.bv = 12;
+        ammo.cost = 27000;
+        ammo.rulesRefs = rulesRefs(
+              rulesRef(SourceBookCode.TM, 229),
+              rulesRef(SourceBookCode.BMM, 103),
+              rulesRef(SourceBookCode.CORE, 186),
+              rulesRef(SourceBookCode.TW, 303),
+              rulesRef(SourceBookCode.TW, 304)
+        );
+        ammo.techAdvancement.setTechBase(TechBase.ALL)
+              .setStaticTechLevel(SimpleTechLevel.INTRO)
+              .setTechRating(TechRating.C)
+              .setAvailability(AvailabilityValue.C, AvailabilityValue.C, AvailabilityValue.C, AvailabilityValue.C)
+              .setISAdvancement(2365, 2370, 2400, DATE_NONE, DATE_NONE)
+              .setISApproximate(false, false, false, false, false)
+              .setClanAdvancement(2365, 2370, 2400, 2836, DATE_NONE)
+              .setClanApproximate(false, false, false, false, false)
+              .setPrototypeFactions(Faction.TH)
+              .setProductionFactions(Faction.TH);
+        return ammo;
+    }
+
     // Clan SRMs (Includes Proto ones)
 
     private static AmmoType createCLSRM1Ammo() {
@@ -10591,7 +10639,7 @@ public class AmmoType extends EquipmentType {
         return ammo;
     }
 
-    // IS Streak Launchers
+    // IS Streak SRM Launchers
     private static AmmoType createISStreakSRM2Ammo() {
         AmmoType ammo = new AmmoType();
 
@@ -10667,6 +10715,66 @@ public class AmmoType extends EquipmentType {
         ammo.ammoType = AmmoTypeEnum.SRM_STREAK;
         ammo.shots = 15;
         ammo.bv = 11;
+        ammo.cost = 54000;
+        ammo.rulesRefs = rulesRefs(
+              rulesRef(SourceBookCode.TM, 230),
+              rulesRef(SourceBookCode.BMM, 104),
+              rulesRef(SourceBookCode.CORE, 187),
+              rulesRef(SourceBookCode.TW, 138)
+        );
+        ammo.techAdvancement.setTechBase(TechBase.IS)
+              .setTechRating(TechRating.E)
+              .setAvailability(AvailabilityValue.X, AvailabilityValue.E, AvailabilityValue.D, AvailabilityValue.D)
+              .setISAdvancement(3055, 3058, 3060, DATE_NONE, DATE_NONE)
+              .setISApproximate(false, false, true, false, false)
+              .setPrototypeFactions(Faction.DC)
+              .setProductionFactions(Faction.DC);
+        return ammo;
+    }
+
+    private static AmmoType createISStreakSRM8Ammo() {
+        AmmoType ammo = new AmmoType();
+
+        ammo.name = "Streak SRM 8 Ammo";
+        ammo.shortName = "Streak SRM 8";
+        ammo.setInternalName("IS Streak SRM 8 Ammo");
+        ammo.addLookupName("IS Ammo Streak-8");
+        ammo.addLookupName("ISStreakSRM8 Ammo");
+        ammo.damagePerShot = 2;
+        ammo.rackSize = 8;
+        ammo.ammoType = AmmoTypeEnum.SRM_STREAK;
+        ammo.shots = 12;
+        ammo.bv = 19;
+        ammo.cost = 54000;
+        ammo.rulesRefs = rulesRefs(
+              rulesRef(SourceBookCode.TM, 230),
+              rulesRef(SourceBookCode.BMM, 104),
+              rulesRef(SourceBookCode.CORE, 187),
+              rulesRef(SourceBookCode.TW, 138)
+        );
+        ammo.techAdvancement.setTechBase(TechBase.IS)
+              .setTechRating(TechRating.E)
+              .setAvailability(AvailabilityValue.X, AvailabilityValue.E, AvailabilityValue.D, AvailabilityValue.D)
+              .setISAdvancement(3055, 3058, 3060, DATE_NONE, DATE_NONE)
+              .setISApproximate(false, false, true, false, false)
+              .setPrototypeFactions(Faction.DC)
+              .setProductionFactions(Faction.DC);
+        return ammo;
+    }
+
+    private static AmmoType createISStreakSRM10Ammo() {
+        AmmoType ammo = new AmmoType();
+
+        ammo.name = "Streak SRM 10 Ammo";
+        ammo.shortName = "Streak SRM 10";
+        ammo.setInternalName("IS Streak SRM 10 Ammo");
+        ammo.addLookupName("IS Ammo Streak-10");
+        ammo.addLookupName("ISStreakSRM10 Ammo");
+        ammo.damagePerShot = 2;
+        ammo.rackSize = 10;
+        ammo.ammoType = AmmoTypeEnum.SRM_STREAK;
+        ammo.shots = 10;
+        ammo.bv = 19;
         ammo.cost = 54000;
         ammo.rulesRefs = rulesRefs(
               rulesRef(SourceBookCode.TM, 230),
@@ -11040,6 +11148,7 @@ public class AmmoType extends EquipmentType {
         return ammo;
     }
 
+    // IS SRT Launchers
     private static AmmoType createISSRT2Ammo() {
         AmmoType ammo = new AmmoType();
 
@@ -11118,6 +11227,213 @@ public class AmmoType extends EquipmentType {
               .setPrototypeFactions(Faction.TH)
               .setProductionFactions(Faction.TH)
               .setReintroductionFactions(Faction.FW);
+        return ammo;
+    }
+
+    private static AmmoType createISSRT8Ammo() {
+        AmmoType ammo = new AmmoType();
+
+        ammo.name = "SRT 8 Ammo";
+        ammo.shortName = "SRT 8";
+        ammo.setInternalName("IS Ammo SRTorpedo-8");
+        ammo.addLookupName("ISSRTorpedo8 Ammo");
+        ammo.addLookupName("IS SRTorpedo 8 Ammo");
+        ammo.addLookupName("ISSRT8 Ammo");
+        ammo.damagePerShot = 2;
+        ammo.rackSize = 8;
+        ammo.ammoType = AmmoTypeEnum.SRM_TORPEDO;
+        ammo.shots = 12;
+        ammo.bv = 10;
+        ammo.cost = 27000;
+        ammo.rulesRefs = rulesRefs(SourceBookCode.TM, 230);
+        ammo.techAdvancement.setTechBase(TechBase.IS)
+              .setTechRating(TechRating.C)
+              .setAvailability(AvailabilityValue.C, AvailabilityValue.C, AvailabilityValue.C, AvailabilityValue.C)
+              .setISAdvancement(2370, 2380, 2400)
+              .setISApproximate(true, false, false, false, false)
+              .setPrototypeFactions(Faction.TH)
+              .setProductionFactions(Faction.TH)
+              .setReintroductionFactions(Faction.FW);
+        return ammo;
+    }
+
+    private static AmmoType createISSRT10Ammo() {
+        AmmoType ammo = new AmmoType();
+
+        ammo.name = "SRT 10 Ammo";
+        ammo.shortName = "SRT 10";
+        ammo.setInternalName("IS Ammo SRTorpedo-10");
+        ammo.addLookupName("ISSRTorpedo10 Ammo");
+        ammo.addLookupName("IS SRTorpedo 10 Ammo");
+        ammo.addLookupName("ISSRT10 Ammo");
+        ammo.damagePerShot = 2;
+        ammo.rackSize = 10;
+        ammo.ammoType = AmmoTypeEnum.SRM_TORPEDO;
+        ammo.shots = 10;
+        ammo.bv = 12;
+        ammo.cost = 27000;
+        ammo.rulesRefs = rulesRefs(SourceBookCode.TM, 230);
+        ammo.techAdvancement.setTechBase(TechBase.IS)
+              .setTechRating(TechRating.C)
+              .setAvailability(AvailabilityValue.C, AvailabilityValue.C, AvailabilityValue.C, AvailabilityValue.C)
+              .setISAdvancement(2370, 2380, 2400)
+              .setISApproximate(true, false, false, false, false)
+              .setPrototypeFactions(Faction.TH)
+              .setProductionFactions(Faction.TH)
+              .setReintroductionFactions(Faction.FW);
+        return ammo;
+    }
+
+    // IS Streak SRTs
+    private static AmmoType createISStreakSRT2Ammo() {
+        AmmoType ammo = new AmmoType();
+
+        ammo.name = "Streak SRT 2 Ammo";
+        ammo.shortName = "Streak SRT 2";
+        ammo.setInternalName("IS Streak SRT 2 Ammo");
+        ammo.addLookupName("IS Ammo SR Streak-2");
+        ammo.addLookupName("ISStreakSRT2 Ammo");
+        ammo.damagePerShot = 2;
+        ammo.rackSize = 2;
+        ammo.ammoType = AmmoTypeEnum.SRM_STREAK_TORPEDO;
+        ammo.shots = 50;
+        ammo.bv = 4;
+        ammo.cost = 54000;
+        ammo.rulesRefs = rulesRefs(
+              rulesRef(SourceBookCode.TM, 230),
+              rulesRef(SourceBookCode.BMM, 104),
+              rulesRef(SourceBookCode.CORE, 187),
+              rulesRef(SourceBookCode.TW, 138)
+        );
+        ammo.techAdvancement.setTechBase(TechBase.ALL)
+              .setTechRating(TechRating.E)
+              .setAvailability(AvailabilityValue.E, AvailabilityValue.E, AvailabilityValue.D, AvailabilityValue.D)
+              .setISAdvancement(2645, 2647, 2650, 2845, 3035)
+              .setISApproximate(false, false, true, false, false)
+              .setClanAdvancement(2645, 2647, 2650, 2845, DATE_NONE)
+              .setClanApproximate(false, false, true, false, false)
+              .setPrototypeFactions(Faction.TH)
+              .setProductionFactions(Faction.TH);
+        return ammo;
+    }
+
+    private static AmmoType createISStreakSRT4Ammo() {
+        AmmoType ammo = new AmmoType();
+
+        ammo.name = "Streak SRT 4 Ammo";
+        ammo.shortName = "Streak SRT 4";
+        ammo.setInternalName("IS Streak SRT 4 Ammo");
+        ammo.addLookupName("IS Ammo SR Streak-4");
+        ammo.addLookupName("ISStreakSRT4 Ammo");
+        ammo.damagePerShot = 2;
+        ammo.rackSize = 4;
+        ammo.ammoType = AmmoTypeEnum.SRM_STREAK_TORPEDO;
+        ammo.shots = 25;
+        ammo.bv = 7;
+        ammo.cost = 54000;
+        ammo.rulesRefs = rulesRefs(
+              rulesRef(SourceBookCode.TM, 230),
+              rulesRef(SourceBookCode.BMM, 104),
+              rulesRef(SourceBookCode.CORE, 187),
+              rulesRef(SourceBookCode.TW, 138)
+        );
+        ammo.techAdvancement.setTechBase(TechBase.IS)
+              .setTechRating(TechRating.E)
+              .setAvailability(AvailabilityValue.X, AvailabilityValue.E, AvailabilityValue.D, AvailabilityValue.D)
+              .setISAdvancement(3055, 3058, 3060, DATE_NONE, DATE_NONE)
+              .setISApproximate(false, false, true, false, false)
+              .setPrototypeFactions(Faction.DC)
+              .setProductionFactions(Faction.DC);
+        return ammo;
+    }
+
+    private static AmmoType createISStreakSRT6Ammo() {
+        AmmoType ammo = new AmmoType();
+
+        ammo.name = "Streak SRT 6 Ammo";
+        ammo.shortName = "Streak SRT 6";
+        ammo.setInternalName("IS Streak SRT 6 Ammo");
+        ammo.addLookupName("IS Ammo SR Streak-6");
+        ammo.addLookupName("ISStreakSRT6 Ammo");
+        ammo.damagePerShot = 2;
+        ammo.rackSize = 6;
+        ammo.ammoType = AmmoTypeEnum.SRM_STREAK_TORPEDO;
+        ammo.shots = 15;
+        ammo.bv = 11;
+        ammo.cost = 54000;
+        ammo.rulesRefs = rulesRefs(
+              rulesRef(SourceBookCode.TM, 230),
+              rulesRef(SourceBookCode.BMM, 104),
+              rulesRef(SourceBookCode.CORE, 187),
+              rulesRef(SourceBookCode.TW, 138)
+        );
+        ammo.techAdvancement.setTechBase(TechBase.IS)
+              .setTechRating(TechRating.E)
+              .setAvailability(AvailabilityValue.X, AvailabilityValue.E, AvailabilityValue.D, AvailabilityValue.D)
+              .setISAdvancement(3055, 3058, 3060, DATE_NONE, DATE_NONE)
+              .setISApproximate(false, false, true, false, false)
+              .setPrototypeFactions(Faction.DC)
+              .setProductionFactions(Faction.DC);
+        return ammo;
+    }
+
+    private static AmmoType createISStreakSRT8Ammo() {
+        AmmoType ammo = new AmmoType();
+
+        ammo.name = "Streak SRT 8 Ammo";
+        ammo.shortName = "Streak SRT 8";
+        ammo.setInternalName("IS Streak SRT 8 Ammo");
+        ammo.addLookupName("IS Ammo SR Streak-8");
+        ammo.addLookupName("ISStreakSRT8 Ammo");
+        ammo.damagePerShot = 2;
+        ammo.rackSize = 8;
+        ammo.ammoType = AmmoTypeEnum.SRM_STREAK_TORPEDO;
+        ammo.shots = 12;
+        ammo.bv = 19;
+        ammo.cost = 54000;
+        ammo.rulesRefs = rulesRefs(
+              rulesRef(SourceBookCode.TM, 230),
+              rulesRef(SourceBookCode.BMM, 104),
+              rulesRef(SourceBookCode.CORE, 187),
+              rulesRef(SourceBookCode.TW, 138)
+        );
+        ammo.techAdvancement.setTechBase(TechBase.IS)
+              .setTechRating(TechRating.E)
+              .setAvailability(AvailabilityValue.X, AvailabilityValue.E, AvailabilityValue.D, AvailabilityValue.D)
+              .setISAdvancement(3055, 3058, 3060, DATE_NONE, DATE_NONE)
+              .setISApproximate(false, false, true, false, false)
+              .setPrototypeFactions(Faction.DC)
+              .setProductionFactions(Faction.DC);
+        return ammo;
+    }
+
+    private static AmmoType createISStreakSRT10Ammo() {
+        AmmoType ammo = new AmmoType();
+
+        ammo.name = "Streak SRT 10 Ammo";
+        ammo.shortName = "Streak SRT 10";
+        ammo.setInternalName("IS Streak SRT 10 Ammo");
+        ammo.addLookupName("IS Ammo SR Streak-10");
+        ammo.addLookupName("ISStreakSRT10 Ammo");
+        ammo.damagePerShot = 2;
+        ammo.rackSize = 10;
+        ammo.ammoType = AmmoTypeEnum.SRM_STREAK_TORPEDO;
+        ammo.shots = 10;
+        ammo.bv = 19;
+        ammo.cost = 54000;
+        ammo.rulesRefs = rulesRefs(
+              rulesRef(SourceBookCode.TM, 230),
+              rulesRef(SourceBookCode.BMM, 104),
+              rulesRef(SourceBookCode.CORE, 187),
+              rulesRef(SourceBookCode.TW, 138)
+        );
+        ammo.techAdvancement.setTechBase(TechBase.IS)
+              .setTechRating(TechRating.E)
+              .setAvailability(AvailabilityValue.X, AvailabilityValue.E, AvailabilityValue.D, AvailabilityValue.D)
+              .setISAdvancement(3055, 3058, 3060, DATE_NONE, DATE_NONE)
+              .setISApproximate(false, false, true, false, false)
+              .setPrototypeFactions(Faction.DC)
+              .setProductionFactions(Faction.DC);
         return ammo;
     }
 

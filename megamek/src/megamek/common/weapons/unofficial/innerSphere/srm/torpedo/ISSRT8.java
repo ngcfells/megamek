@@ -32,7 +32,7 @@
  * affiliated with Microsoft.
  */
 
-package megamek.common.weapons.srms.innerSphere;
+package megamek.common.weapons.unofficial.innerSphere.srm.torpedo;
 
 import java.io.Serial;
 
@@ -42,30 +42,36 @@ import megamek.common.enums.AvailabilityValue;
 import megamek.common.enums.Faction;
 import megamek.common.enums.TechBase;
 import megamek.common.enums.TechRating;
-import megamek.common.weapons.srms.SRMWeapon;
+import megamek.common.weapons.srms.SRTWeapon;
 
 /**
  * @author NGCFells
  * Based on the SRM-Rules document by Riker of KBS on Solaris7.com
+ * https://drive.google.com/drive/folders/0B5bLPOivte0vdjZ0YVQySDZ2SGc?resourcekey=0-oabxb-hZhk9iZVmeTa9zPQ
  */
-public class ISSRM8 extends SRMWeapon {
+public class ISSRT8 extends SRTWeapon {
     @Serial
-    private static final long serialVersionUID = -551008288820260000L;
+    private static final long serialVersionUID = -551008288820260001L;
 
-    public ISSRM8() {
+    public ISSRT8() {
         super();
-        this.name = "SRM 8";
+        this.name = "SRT 8";
         this.setInternalName(this.name);
-        this.addLookupName("IS SRM-8");
-        this.addLookupName("ISSRM8");
-        this.addLookupName("IS SRM 8");
-        this.addLookupName("IS SRM8");
+        this.addLookupName("IS SRT-8");
+        this.addLookupName("ISSRT8");
+        this.addLookupName("IS SRT 8");
+        this.addLookupName("IS SRT8");
         this.heat = 5;
         this.rackSize = 8;
         this.shortRange = 3;
         this.mediumRange = 6;
         this.longRange = 9;
         this.extremeRange = 12;
+        // Torpedo Water Ranges (This forces MegaMekLab UI to display them!)
+        this.waterShortRange = 3;
+        this.waterMediumRange = 6;
+        this.waterLongRange = 9;
+        this.waterExtremeRange = 12;
         this.tonnage = 4.0;
         this.criticalSlots = 2;
         this.bv = 78;

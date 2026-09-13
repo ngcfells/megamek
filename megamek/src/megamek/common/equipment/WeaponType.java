@@ -478,7 +478,6 @@ import megamek.common.weapons.srms.clan.torpedo.oneShot.CLSRT6OS;
 import megamek.common.weapons.srms.innerSphere.ISSRM2;
 import megamek.common.weapons.srms.innerSphere.ISSRM4;
 import megamek.common.weapons.srms.innerSphere.ISSRM6;
-import megamek.common.weapons.srms.innerSphere.ISSRM8;
 import megamek.common.weapons.srms.innerSphere.oneShot.ISSRM2IOS;
 import megamek.common.weapons.srms.innerSphere.oneShot.ISSRM2OS;
 import megamek.common.weapons.srms.innerSphere.oneShot.ISSRM4IOS;
@@ -530,6 +529,18 @@ import megamek.common.weapons.unofficial.innerSphere.mrm.oneShot.ISMRM2OS;
 import megamek.common.weapons.unofficial.innerSphere.mrm.oneShot.ISMRM3OS;
 import megamek.common.weapons.unofficial.innerSphere.mrm.oneShot.ISMRM4OS;
 import megamek.common.weapons.unofficial.innerSphere.mrm.oneShot.ISMRM5OS;
+import megamek.common.weapons.unofficial.innerSphere.srm.ISSRM8;
+import megamek.common.weapons.unofficial.innerSphere.srm.ISSRM10;
+import megamek.common.weapons.unofficial.innerSphere.srm.oneShot.ISSRM8IOS;
+import megamek.common.weapons.unofficial.innerSphere.srm.oneShot.ISSRM8OS;
+import megamek.common.weapons.unofficial.innerSphere.srm.oneShot.ISSRM10IOS;
+import megamek.common.weapons.unofficial.innerSphere.srm.oneShot.ISSRM10OS;
+import megamek.common.weapons.unofficial.innerSphere.srm.streak.ISStreakSRM8;
+import megamek.common.weapons.unofficial.innerSphere.srm.streak.ISStreakSRM10;
+import megamek.common.weapons.unofficial.innerSphere.srm.torpedo.ISSRT8;
+import megamek.common.weapons.unofficial.innerSphere.srm.torpedo.ISSRT10;
+import megamek.common.weapons.unofficial.innerSphere.srm.streak.torpedo.ISStreakSRT8;
+import megamek.common.weapons.unofficial.innerSphere.srm.streak.torpedo.ISStreakSRT10;
 import megamek.common.weapons.unofficial.innerSphere.thb.ISTHBLB20XAC;
 import megamek.common.weapons.unofficial.innerSphere.thb.ISTHBLB2XAC;
 import megamek.common.weapons.unofficial.innerSphere.thb.ISTHBLB5XAC;
@@ -1662,7 +1673,6 @@ public class WeaponType extends EquipmentType {
         EquipmentType.addType(new ISSRM2());
         EquipmentType.addType(new ISSRM4());
         EquipmentType.addType(new ISSRM6());
-        EquipmentType.addType(new ISSRM8());
         EquipmentType.addType(new ISSRM2OS());
         EquipmentType.addType(new ISSRM4OS());
         EquipmentType.addType(new ISSRM6OS());
@@ -1700,14 +1710,25 @@ public class WeaponType extends EquipmentType {
         EquipmentType.addType(new ISSRM6Primitive());
 
         // Unofficial SRMs
-        
+        EquipmentType.addType(new ISSRM8());
+        EquipmentType.addType(new ISSRM10());
+        EquipmentType.addType(new ISSRM8OS());
+        EquipmentType.addType(new ISSRM10OS());
+        EquipmentType.addType(new ISSRM8IOS());
+        EquipmentType.addType(new ISSRM10IOS());
+        EquipmentType.addType(new ISStreakSRM8());
+        EquipmentType.addType(new ISStreakSRM10());
+        //EquipmentType.addType(new ISStreakSRM8OS());
+        //EquipmentType.addType(new ISStreakSRM10OS());
+        //EquipmentType.addType(new ISStreakSRM8IOS());
+        //EquipmentType.addType(new ISStreakSRM10IOS());
 
         // SRTs
         EquipmentType.addType(new ISSRT2());
-        EquipmentType.addType(new ISSRT4());
-        EquipmentType.addType(new ISSRT6());
         EquipmentType.addType(new ISSRT2OS());
+        EquipmentType.addType(new ISSRT4());
         EquipmentType.addType(new ISSRT4OS());
+        EquipmentType.addType(new ISSRT6());
         EquipmentType.addType(new ISSRT6OS());
         EquipmentType.addType(new CLSRT1());
         EquipmentType.addType(new CLSRT2());
@@ -1721,6 +1742,20 @@ public class WeaponType extends EquipmentType {
         EquipmentType.addType(new CLSRT4OS());
         EquipmentType.addType(new CLSRT5OS());
         EquipmentType.addType(new CLSRT6OS());
+
+        // Unofficial SRTs
+        EquipmentType.addType(new ISSRT8());
+        // EquipmentType.addType(new ISSRT8IOS());
+        // EquipmentType.addType(new ISSRT8OS());
+        EquipmentType.addType(new ISSRT10());
+        // EquipmentType.addType(new ISSRT10IOS());
+        // EquipmentType.addType(new ISSRT10OS());
+        EquipmentType.addType(new ISStreakSRT8());
+        // EquipmentType.addType(new ISStreakSRT8IOS());
+        // EquipmentType.addType(new ISStreakSRT8OS());
+        EquipmentType.addType(new ISStreakSRT10());
+        // EquipmentType.addType(new ISStreakSRT10IOS());
+        // EquipmentType.addType(new ISStreakSRT10OS());
 
         // RLs
         EquipmentType.addType(new RocketLauncher10());
